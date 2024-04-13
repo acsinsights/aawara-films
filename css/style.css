@@ -44,6 +44,10 @@
 	font-family: 'Rubik', sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	scroll-behavior: smooth;
+}
+[id]{
+	scroll-margin-top: 150px;
 }
 .img {
 	max-width: 100%;
