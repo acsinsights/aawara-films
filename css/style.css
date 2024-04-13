@@ -5330,3 +5330,6 @@ p.checkout-coupon input[type="text"] {
 	cursor: pointer;
 	top: 11px;
 }
+.theme-text{
+	color: #fd6500;
+}
