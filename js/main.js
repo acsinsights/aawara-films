@@ -47,10 +47,10 @@ $("[data-background]").each(function () {
 			doAnimations($animatingElements);
 		});
 		BasicSlider.slick({
-			autoplay: false,
-			autoplaySpeed: 10000,
+			autoplay: true,
+			autoplaySpeed: 3000,
 			dots: false,
-			fade: true,
+			fade:  false,
 			prevArrow: '<button type="button" class="slick-prev"> <i class="far fa-chevron-left"></i> </button>',
 			nextArrow: '<button type="button" class="slick-next"> <i class="far fa-chevron-right"></i> </button>',
 			arrows: true,

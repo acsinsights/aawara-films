@@ -5330,6 +5330,13 @@ p.checkout-coupon input[type="text"] {
 	cursor: pointer;
 	top: 11px;
 }
+/* custom */
 .theme-text{
 	color: #fd6500;
+}
+.header-2-border{
+	background-color: black;
+}
+.team-content{
+	margin-top: 0px;
 }
