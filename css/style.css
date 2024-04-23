@@ -5340,3 +5340,10 @@ p.checkout-coupon input[type="text"] {
 .team-content{
 	margin-top: 0px;
 }
+.slider-content {
+	 filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+.slider-content span::before{
+	right:0;
+	bottom: -10px;
+}
