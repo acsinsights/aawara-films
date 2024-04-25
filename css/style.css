@@ -5332,7 +5332,7 @@ p.checkout-coupon input[type="text"] {
 }
 /* custom */
 .theme-text{
-	color: #fd6500;
+	color:#f28e20;
 }
 .header-2-border{
 	background-color: black;
@@ -5346,4 +5346,25 @@ p.checkout-coupon input[type="text"] {
 .slider-content span::before{
 	right:0;
 	bottom: -10px;
+}
+.header-info span i,
+.header-top-text p a,
+.section-2-title span,
+.client-wrapper::before,
+.client-icon i,
+.client-text span,
+.counter-text h1,
+.team-text span,
+.copyright p a,
+.section-title span,
+.contact-info ul li i{
+	color: #f28e20;
+}
+.slider-active button:hover,
+.section-2-title span::after,
+.section-2-title span::before,
+#scrollUp,
+.btn{
+
+	background: #f28e20;
 }
