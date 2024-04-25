@@ -132,19 +132,20 @@ $("[data-background]").each(function () {
 		nav: false,
 		dots: false,
 		autoplay: true,
+		autoplayTimeout: 1000,
 		navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
 		responsive: {
 			0: {
-				items: 1
+				items: 2
 			},
 			576: {
-				items: 1
-			},
-			768: {
 				items: 3
 			},
-			992: {
+			768: {
 				items: 4
+			},
+			992: {
+				items: 5
 			},
 			1200: {
 				items: 5

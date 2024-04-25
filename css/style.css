@@ -5368,3 +5368,6 @@ p.checkout-coupon input[type="text"] {
 
 	background: #f28e20;
 }
+.brand-2-active .col-xl-12 {
+	padding: 0;
+}
