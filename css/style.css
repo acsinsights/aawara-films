@@ -5733,6 +5733,10 @@ p.checkout-coupon input[type="text"] {
 	.meanmenu-reveal {
 		transform: translateY(-15px);
 	}
+	.mob-flex {
+		flex-direction: column;
+		gap: 14px;
+	}
 }
 #whatsapp {
 	background: green;
