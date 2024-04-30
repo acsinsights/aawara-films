@@ -5757,3 +5757,6 @@ p.checkout-coupon input[type="text"] {
 .single-wrapper .footer-2-icon a:hover svg path {
 	fill: #fd6500;
 }
+.slider-active button:hover{
+	right: 70px!important;
+}
