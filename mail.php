@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Email Sent Successfully!";
+        echo "Form Submitted Successfully!";
     } else {    
         echo "Failed to send email.";
     }
