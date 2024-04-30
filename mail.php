@@ -1,28 +1,40 @@
 <?php
-// display all request data and end script
-// var_dump($_REQUEST);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "2490rahuljadhav@gmail.com"; // Replace with your email address
+    $subject = "Contact Form Submission";
+    
+    // Get form data
+    $name = $_POST["name"];
+    $phone = $_POST["phone"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
 
-$name = $_REQUEST['fname'];
-$email = $_REQUEST['email']; 
-$message = $_REQUEST['country_name'];
-$phone = $_REQUEST['modal_my_mobile2'];
-
-$mail =
-    "\n name: " . $name .
-    "\n email: " . $email .
-    "\n country: " . $message .
-    "\n phone: " . $phone  ;
-
-$retval = mail("kishan.adfj@gmail.com", "new contact form ", $mail, "From: $name <$email> phone: $phone");
-
-
-if ($retval == true) {
-    echo "Message sent successfully...
-      <script type='text/javascript'>
-      alert('Your Message Sent Successfully');
-      window.history.back();
-     </script>";
-} else {
-    echo "Message could not be sent...";
-}
+    $body = "
+        <html>
+        <head>
+            <title>Contact Form Submission</title>
+        </head>
+        <body>
+            <h2>Contact Form Submission</h2>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Phone:</strong> $phone</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Subject:</strong> $subject</p>
+            <p><strong>Message:</strong> $message</p>
+        </body>
+        </html>
+    ";
  
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Email Sent Successfully!";
+    } else {    
+        echo "Failed to send email.";
+    }
+}
+?>
