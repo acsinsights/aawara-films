@@ -1347,7 +1347,7 @@ label {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background: #262626;
+	background: #e77a00;
 	opacity: 0;
 	left: 0;
 	top: 0;
@@ -1396,10 +1396,11 @@ label {
 }
 .portfolio-content h1 > a {
 	color: #fff;
+	filter: drop-shadow(1px 2px 3px black);
 	transition: 0.3s;
 }
 .portfolio-content h1 > a:hover {
-	color: #fd6500;
+	color: #ffffff;
 }
 
 /* galley-7-style */
