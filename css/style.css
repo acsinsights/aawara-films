@@ -5738,6 +5738,13 @@ p.checkout-coupon input[type="text"] {
 		flex-direction: column;
 		gap: 14px;
 	}
+	.mob-flex-direction-col{
+		flex-direction: column;
+		align-items: center;
+	}
+	.mob-pb-63{
+		padding-bottom: 63px!important;
+	}
 }
 #whatsapp {
 	background: green;
