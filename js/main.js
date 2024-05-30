@@ -1,12 +1,18 @@
+ 
+$(document).ready(function () {
+    $("#loadMore").click(function () {
+        $(".gallery-item:hidden").show();
+        $("#loadMore").fadeOut('slow');
+        $("#showLess").fadeIn('slow');
+    });
 
-
-
-
-
-
-
-
-
+    $("#showLess").click(function () {
+        $(".gallery-item:visible").slice(9).hide();
+        $("#showLess").fadeOut('slow');
+        $("#loadMore").fadeIn('slow');
+    });
+});
+ 
 
 (function ($) {
 "use strict";
