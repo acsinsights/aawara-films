@@ -37,9 +37,18 @@
 */
 
 /* 1. Theme default css */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900,900i|Rubik:300,400,500,700,900&display=swap");
+@font-face {
+	font-family: "black-coffee";
+	src:url("../cust-fonts/Arial.ttf");
+	src:url("../cust-fonts/black-coffee.ttf") format("truetype"),
+	  url("../cust-fonts/Black-coffee.ttf") format("truetype"),
+	  url("../cust-fonts/Schoolbell-Regular.ttf") format("truetype"), 
+  
+  
+  }
+
 body {
-	font-family: "Rubik", sans-serif;
+	font-family: "black-coffee", sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	scroll-behavior: smooth;
@@ -107,7 +116,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Playfair Display", serif;
+	font-family: "black-coffee", serif;
 	font-weight: normal;
 	color: #262626;
 	margin-top: 0px;
@@ -151,7 +160,7 @@ li {
 	list-style: none;
 }
 p {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: normal;
 	line-height: 32px;
 	color: #696969;
@@ -411,7 +420,7 @@ label {
 	color: #fd6500;
 	font-size: 14px;
 	text-transform: capitalize;
-	font-family: "Playfair Display", serif;
+	font-family: "black-coffee", serif;
 }
 .header-cta-text span i {
 	margin-right: 6px;
@@ -1665,7 +1674,7 @@ label {
 .testimonial-text p {
 	color: #262626;
 	font-size: 30px;
-	font-family: "Playfair Display", serif;
+	font-family: "black-coffee", serif;
 	line-height: 1.8;
 	margin-bottom: 22px;
 }
@@ -2350,7 +2359,7 @@ label {
 }
 .footer-content span {
 	float: left;
-	font-family: "Playfair Display", serif;
+	font-family: "black-coffee", serif;
 	font-size: 16px;
 	color: #fff;
 	margin-right: 22px;
@@ -3055,7 +3064,7 @@ label {
 	font-size: 20px;
 	color: #262626;
 	font-weight: 700;
-	font-family: "Playfair Display", serif;
+	font-family: "black-coffee", serif;
 	margin-right: 14px;
 }
 .social-icon {
