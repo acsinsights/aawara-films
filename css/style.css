@@ -904,8 +904,8 @@ label {
 }
 /* about-4-style */
 .about-2-wrapper {
-	margin-left: 70px;
-	margin-right: 27px;
+	margin-left: 20px;
+	margin-right: 7px;
 }
 .about-2-content span {
 	color: #fd6500;
@@ -5774,4 +5774,9 @@ p.checkout-coupon input[type="text"] {
 }
 .slider-active button:hover{
 	right: 70px!important;
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+	.best-services-text p {
+		padding: 0 25px!important;
+	}
 }
