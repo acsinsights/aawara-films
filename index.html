@@ -71,22 +71,22 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li>
-                                        <a href="#home-section">Home</a>
+                                        <a href="#home-section" onclick="toggleMobileMenu()">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#about-section">About Us</a>
+                                        <a href="#about-section" onclick="toggleMobileMenu()">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#services-section">Services</a>
+                                        <a href="#services-section" onclick="toggleMobileMenu()">Services</a>
                                     </li>
                                     <!-- <li>
-                                        <a href="#testimonials-section">Testimonials</a>
+                                        <a href="#testimonials-section" onclick="toggleMobileMenu()">Testimonials</a>
                                     </li> -->
                                     <li>
-                                        <a href="#team-section">Team</a>
+                                        <a href="#team-section" onclick="toggleMobileMenu()">Team</a>
                                     </li>
                                     <li>
-                                        <a href="#contact-section">Contact Us</a>
+                                        <a href="#contact-section" onclick="toggleMobileMenu()">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -1747,5 +1747,12 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        function toggleMobileMenu() {
+    document.querySelector('.meanmenu-reveal').click();
+}
+    </script>
+
 </body>
 </html>
